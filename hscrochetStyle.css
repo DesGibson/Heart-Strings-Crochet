@@ -1,0 +1,244 @@
+body {
+    background-image: linear-gradient(to bottom right, #610027, #912b48, #b45869);
+    background-repeat: no-repeat;
+    /**margin: 1rem;
+    padding: 1rem;**/
+    color: #fcd0d9;
+}
+
+.essay {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.gall {
+    width: 70%;
+    margin: 0 15%;
+    padding: 1rem;
+}
+.menu {
+    background-color: #b45869;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /**position: fixed;
+    position: static;
+    padding: 0;
+    margin: 0;**/
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: #fcd0d9;
+    display: inline;
+    font-size: 1rem;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+#active {
+    text-decoration: none;
+    color: #610027;
+    background-color: #fcd0d9;
+}
+
+.line a {
+    text-decoration: none;
+    color: #ffccd5;
+    font-size: 1rem;
+}
+
+.logo {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+h1, .intro, h2, p {
+    text-align: center;
+}
+
+.display {
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20%;
+    background-image: url("PinkFlowers.avif");
+    /**background-image: url("https://image.slidesdocs.com/responsive-images/background/floral-nature-pink-flowers-pink-flowers-pastel-powerpoint-background_b7c74f1ee3__960_540.jpg");**/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /**border: 0.5rem solid #fcd0d9;**/
+}
+
+#sub {
+    background-color: #912b4850;
+    color: #610027;
+    padding: 1rem;
+    /**border: 0.5rem solid #000000;**/
+    /**margin: 1rem;**/
+}
+ footer {
+    text-align: center;
+    background-color: #fcd0d9;
+    color: #b45869; 
+    padding: 1rem 2rem;
+    margin: 0;
+ }
+
+.parallax {
+background-image: url("HotpinkFlowers.jpg");
+min-height: 200px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sidebar {
+    float: left;
+    background-color: #b45869;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-self: flex-start;
+    position: fixed;
+    border: 0.25rem groove #fcd0d9;
+    /**min-height: 25rem;**/
+}
+
+.sidebar a, .tuts {
+    text-decoration: none;
+    list-style-type: none;
+    color: #610027;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    line-height: 3.5;
+    position: static;
+}
+
+.tuts li:hover {
+    color: #610027;
+    background-color: #fcd0d9;
+}
+
+form {
+    width: 40%;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.25rem, 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #fcd0d9;
+}
+ input[type=submit] {
+    width: 100%;
+    background-color: #912b48;
+    color: #fcd0d9;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 0.1rem;
+    border-style: solid;
+    border-color: #fcd0d9;  
+    cursor: pointer; 
+ }
+
+ input[type=submit]:hover {
+    background-color: #b45869;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    width: 100%;
+    
+ }
+
+ textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.25rem, 0;
+    box-sizing: border-box;
+ }
+
+ .reach {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+ }
+
+ .exhib {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .exhibr {
+    justify-content: right;
+    width: 40%;
+    height: auto;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    /**border: inset #fcd0d9 1rem;**/
+}
+
+.exhibl {
+    justify-content: left;
+    width: 40%;
+    height: auto;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    /**border: inset #fcd0d9 1rem;**/
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 220px;
+  border: inset #fcd0d9 1rem;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #ffffff;
+  color: #912b48;
+}
+
+.flip-box-back {
+  background-color: #ffffff;
+  color: #912b48;
+  transform: rotateY(180deg);
+  align-content: center;
+}
